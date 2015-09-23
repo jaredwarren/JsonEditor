@@ -11,7 +11,7 @@ Ext.define('JsonEditor.view.main.Main', {
 
     requires: [
         'Ext.MessageBox',
-
+        'JsonEditor.view.JsonNestedList',
         'JsonEditor.view.main.MainController',
         'JsonEditor.view.main.MainModel',
         'JsonEditor.view.main.List'
@@ -36,7 +36,7 @@ Ext.define('JsonEditor.view.main.Main', {
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
-                xtype: 'mainlist'
+                xtype: 'jsonnestedlist'
             }]
         },{
             title: 'Users',
